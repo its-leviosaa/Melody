@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melody - Best place to hear your favourites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.jpeg" alt="Melody">Melody</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="Container">
+        <div class="SongsList">
+            <h1>Best of 2023 - Viral Songs</h1>
+            <div class="SongCollectionContainer">
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Love Story</span>
+                <span class="SongsListPlay"><span class="timeStamp">03:56 <i id="0" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Criminal</span>
+                <span class="SongsListPlay"><span class="timeStamp">03:45 <i id="1" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Shape of You</span>
+                <span class="SongsListPlay"><span class="timeStamp">03:55 <i id="2" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Until I found You</span>
+                <span class="SongsListPlay"><span class="timeStamp">02:57 <i id="3" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Sanam Re</span>
+                <span class="SongsListPlay"><span class="timeStamp">04:29 <i id="4" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Uff Teri Adaa</span>
+                <span class="SongsListPlay"><span class="timeStamp">05:04 <i id="5" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Chal Waha Jaatein hai</span>
+                <span class="SongsListPlay"><span class="timeStamp">05:26 <i id="6" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Lambi Judaai</span>
+                <span class="SongsListPlay"><span class="timeStamp">05:02 <i id="7" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">Hum Tumko Chura Lenge</span>
+                <span class="SongsListPlay"><span class="timeStamp">06:06 <i id="8" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+            <div class="SongsCollection">
+                <img alt="1">
+                <span class="songName">The Night We Met</span>
+                <span class="SongsListPlay"><span class="timeStamp">03:28  <i id="9" class="far songItemPlay fa-regular fa-circle-play"></i></span></span>
+            </div>
+        </div>
+        </div>
+        <div class="BackgroundSongCover"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="ProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!--Font awesome icons-->
+            <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-3x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px"  alt="" id="gif"><span id="masterSongname">Love Story</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/df745d4c6d.js" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+</body>
+</html>

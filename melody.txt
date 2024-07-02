@@ -1,0 +1,140 @@
+ye project pure js html css h ..humlog tailwind nhi use kiye h
+
+The alt attribute specifies an alternate text for an area, if the image cannot be displayed.
+
+<link rel="stylesheet" href="style.css"> -> aise html mein css file ko add
+<script src = "script.js"></script> -> aise html mein js file ko add
+<script src="https://kit.fontawesome.com/df745d4c6d.js" crossorigin="anonymous"></script>-> for using fo icons
+class hum html mein isiliye lagate h so that css mein hum style kar paaye
+
+In CSS, a margin is the space around an element's border, while padding is the space between an element's border and the element's content. Put another way, the margin property controls the space outside an element, and the padding property controls the space inside an element.
+
+The universal selector (*) selects all HTML elements on the page. 
+
+navbar ke andar jo bhi kuch likha ho iske liye ek font daalna h toh hum google font se import karenge
+font-family: "Poetsen One", sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Sevillana', cursive;
+
+display flex karne se sare items horizontally ho jayenge
+list-style-type: none; mai nhi chahta bindu bindu dikhe
+
+nav ul {} means ke mere nav bar ke andar ki ul
+
+.brand img{} means ki humare brand class ke andar jo image h uske andar corresponding change karo
+
+apne website ko inspect karke logo ke image ki width ko adjust karo and then usko code mein likho
+
+<li class="brand"><img src="logo.jpeg" alt="Melody">Melody</li> -> brand class mein image h and image ke bagal mein right side mein Melody likha h kyunki humne alt Melody ke bass melody likha h taaki wo appear ho waha
+
+nav ul ke andar add color: aliceblue; so that humne jo text likhe h nav baar mein wo dikhe because background colour black h navbar ka
+
+li mein humara home about h toh usko hum beech mein space dene ke liye I did padding horizontaally
+
+align item center kiye toh sab center mein aa gaya bass wo text jo humne logo ke saath likh h wo nhi aaya thus hum .brand ko bhi ek flexbox banayenge aur usme har chij related to font and alignment adjust karenge and usse attatched jo text h usme aur photo mein gap aa jaaye
+
+abhi saare texts ke bich mein space nhi h so abb hume list ke saath kuch karna hoga so we'll write nav ul li and do padding for space
+
+abb hum ek container banayenge apne index.html mein nav baar we have already created abb we are creating main container jaha hume gaane dikhyi denge
+
+<div class="Container"></div> -> note that ki ye container bootstrap waali container class nhi h ab isme hum heading deke ek album create karenge abb hum do div banayenge ek jisme hum song list ko display karenge aur ek aur div jiske andar hum photo daalenge apni background image hum use karna chahte h and we want ki yaha humaari song list aa jaaye
+
+ek div ko class dungi song list
+div.songList enter karne se div naam ka container with class songList create ho jayega
+
+div.bottom isme hum wo sab daalenge ki kon sa song baj raha h and next karo and all those things
+
+The <input> tag specifies an input field where the user can enter data.
+The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control).
+
+input:range -> isse humare webpage pe ek slider aa jayega jikso hum aage picche kar sakte h now wo jo h humare navbar ke niche aa gayi h webpage pe and we want ki wo jo h bottom pe aaye ekdum so we will change position by styling our bottom class in style.css
+
+BOTTOM PE HUM EK black color ki patti chahte h jiske andar hume play prev next aise icons present ho
+Position sticky is used when you want some element to stick to a location when scrolling a web page. You may have noticed that navigation bar of some websites remains on the top of the page even if you are scrolling down, in this case position sticky is used.
+
+.container{
+    min-height: 80vh;
+} added taaki bottom 0 kaam kare
+
+now text-align: center; ->it won't work here in #progressBar kyunki bottom poora container nhi h thus hume bottom ko bhi flexbox bananna hoga kyunki yaha aisa nhi thaa ki bottom ek poora container h nd uske andar kuch item h aur usko hum centre mein karna chahte h
+
+The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+
+fontawesome icons-> uski website se apne page pr daalenge waha ke icons
+
+The classic way to use a Font Awesome Kit - just one line of javascript.
+<script src="https://kit.fontawesome.com/df745d4c6d.js" crossorigin="anonymous"></script>
+
+<i class="fa-regular fa-circle-play"></i> -> circle play will be added
+
+<i class="fa-regular fa-3x fa-circle-play"></i> -> by using fa-3x icon will increase by 3 times
+
+css mein bottom mein flex-direction: column; karo taaki baaki cheezein niche aaye
+
+h1 jo h songlist ke andar daalo kyunki mai heading songlist ke andar rakhna chahti hu
+
+The CSS margin properties are used to create space around elements, outside of any defined borders. With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).
+
+margin: 10px 5px 15px 20px; top margin is 10px. right margin is 5px. bottom margin is 15px. left margin is 20px.
+
+https://www.w3schools.com/css/css_margin.asp -> all details about margin is given here
+You can set the margin property to auto to horizontally center the element within its container.
+The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+
+padding: 10px;-> .Container class mein I did it to increase the space between the contents of container and boundary 
+
+background-repeat: no-repeat;
+background-size: contain;-> to filly fit ur image in background
+
+abb hum song list ke andar ki html h uski baat karenge -> go to ur html page and go inside songlist section abb songlists ke andar new div banayenge
+span daale taaki gana ka naam and photo ek hi line mein ho
+now cover image ko chhota karne ke liye songCollection ke liye css likhenge
+ab songcollection waali div ko repaeat karna h atleast 10 baar karo abhi kyunki 10 gaane dalana h
+
+opacity ko 0 se 1 karunga javascript se
+
+//audioElement.play() -> ye jaise hi hum daale gaana play ho jaa raha thaa so we comented it
+
+now abb mai ye chahta hu ki jab bhi hum uss sticky line ke play button ko click kare toh wo click ho jaaye and song 
+play ho jaaye and mera seek bar bhi kaam kare
+
+abb hum song naam ka ek array(of objects) banayenge js mein jisme key value pair hoga
+
+The getElementById() is a JavaScript function that lets you grab an HTML element, by its id , and perform an action on it. The name
+of the id is passed as a parameter, and ​the corresponding element is the return value.
+
+The addEventListener() method attaches an event handler to an element without overwriting existing event handlers. 
+You can add many event handlers to one element. 
+
+The timeupdate event is fired when the time indicated by the currentTime
+ attribute has been updated. ye ek audio ka event h seek bar ka nhi
+
+agar kisi ne bhi masterplay pe click kiya tab yaha do chijein hogi ya 
+toh audio play hogi ya toh nhi hogi
+
+audioElement.paused || audioElement.currentTime<=0 -> audio paused h ya audio start nhi ho raha h
+tab mai likhunga ki audio ko play ko kardo
+ab mai chahunga ki play jo h pause mein convert ho jaaye
+ab mai same kaam karunga else ke andar ki agar audio chal rahi h toh usko pause kar do
+
+css mein -> transition: opacity 0.5s ease-in; -> 
+isse gif jaldi gayab ho jaaye aur waapis aa haye play and pause pe
+
+progress -> isse hum ye nikalenge ki humara song kitna percentage chala h
+
+audioElement.currentTime -> isse abhi ka time pata chalega ki current time jispe chal raha h humara song
+
+index.html mein hum progress bar ko 0 set kiye h taaki seekbar humesha shuru se start ho
+
+ProgressBar.addEventListener-> progress bar mein ek change event lagaungnga jaise hi change hua ye
+mera progressBar mai audio ko bhi wahi pe seek kar denge
+
+ProgressBar.value -> humne initially progressBar.value mein percentage daali h toh usi hisaab se 
+seek ho raha isiliye multiply kiye hum
+initially hume percentage pata chalti thi ki humara song kitna percent play hua h
+ab hume nikalna h duration so change percent to duration so hum percentage mein multiply karenge
+duration ko and then divide by 100
+currentTime/duration * 100 = percentage
+for each ek call back function leta h
+
+inspect se hum har icon pe inspect click karke dekh sakte h ki uss size kaise badhaya ghataya jaaye ya kya aur change kiya jaaye ya wo kis div se belong

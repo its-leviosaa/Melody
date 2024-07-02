@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+body{
+    background-color :rgb(252, 222, 227)
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Playfair Display', serif;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 89px;
+    background-color: black;
+    color: aliceblue;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 100px;
+    height: 70px;
+    padding: 0 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.35rem;
+}
+.Container{
+    min-height: 70vh;
+    background-color: black;
+    color: aliceblue;
+    font-family: "Poetsen One", sans-serif;
+    display: flex;
+    width: 63%;
+    margin: 23px auto;
+    border-radius: 15px;
+    padding: 10px;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: antiquewhite;/*this will make our icons and text visible on black background*/
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.SongsCollection{
+    height: 50px;
+    display: flex;
+    background-color: beige;
+    color: black;
+    /*width: 80%;*/
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+.SongsCollection img{
+    width: 43px;
+    margin: 0 20px;
+    border-radius: 34px;
+}
+.timeStamp{
+    margin: 0 15px;
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.icons{
+    margin-top: 15px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+#ProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    /* text-align: center; ->it won't work here */
+}
+.SongCollectionContainer{
+    margin-top: 54px;
+}
+.songInfo{
+    position: absolute;/*since bottom is positioned element*/
+    left: 10vw;
+    font-family: 'Playfair Display', serif;
+}
+.songInfo img{
+    opacity: 0; /*opacity 1 tabhi playing gif dikhegi*/
+    transition: opacity 0.5s ease-in;
+}
